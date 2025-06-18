@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class Timetable - DoBu Martial Arts</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="logo.png" alt="DoBu Martial Arts Logo" class="logo">
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="timetable.html" aria-current="page">Classes</a></li>
+          <li><a href="account.html">Account</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="timetable">
+      <h1>Class Timetable</h1>
+      <div class="filters">
+        <label for="martial-art-filter">Filter by Martial Art:</label>
+        <select id="martial-art-filter" aria-label="Filter classes by martial art">
+          <option value="all">All</option>
+          <option value="jiu-jitsu">Jiu Jitsu</option>
+          <option value="karate">Karate</option>
+          <option value="judo">Judo</option>
+          <option value="muay-thai">Muay Thai</option>
+        </select>
+        <label for="time-filter">Filter by Time:</label>
+        <select id="time-filter" aria-label="Filter classes by time">
+          <option value="all">All</option>
+          <option value="morning">Morning</option>
+          <option value="evening">Evening</option>
+        </select>
+      </div>
+      <table id="timetable-table" aria-label="Class schedule">
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Time</th>
+            <th>Martial Art</th>
+            <th>Instructor</th>
+            <th>Price</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <a href="timetable.pdf" download class="download-link">Download Timetable (PDF)</a>
+      <a href="account.html" class="cta-button">Join Now</a>
+    </section>
+
+    <aside class="martial-arts-info">
+      <h2>Martial Arts Offered</h2>
+      <div>
+        <h3>Jiu Jitsu</h3>
+        <p>Great for grappling and self-defense. Suitable for all skill levels.</p>
+      </div>
+      <!-- Add more martial arts descriptions -->
+    </aside>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Contact: info@dobumartialarts.com | &copy; 2025 DoBu Martial Arts</p>
+      <ul class="footer-links">
+        <li><a href="#privacy">Privacy Policy</a></li>
+        <li><a href="#terms">Terms of Service</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
