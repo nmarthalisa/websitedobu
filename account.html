@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Account - DoBu Martial Arts</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="logo.png" alt="DoBu Martial Arts Logo" class="logo">
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="timetable.html">Classes</a></li>
+          <li><a href="account.html" aria-current="page">Account</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="account">
+      <h1>Account Management</h1>
+      <div id="login-form" class="form-container">
+        <h2>Login</h2>
+        <form aria-label="Login form">
+          <label for="email">Email:</label>
+          <input type="email" id="email" required aria-describedby="email-error">
+          <span id="email-error" class="error" role="alert"></span>
+          <label for="password">Password:</label>
+          <input type="password" id="password" required aria-describedby="password-error">
+          <span id="password-error" class="error" role="alert"></span>
+          <button type="submit">Login</button>
+          <a href="#forgot-password">Forgot Password?</a>
+        </form>
+        <p>Or <a href="#signup">Sign Up</a></p>
+      </div>
+
+      <div id="dashboard" class="dashboard hidden">
+        <h2>Welcome, <span id="user-name"></span></h2>
+        <p>Membership: <span id="membership-status"></span></p>
+        <p>Upcoming Classes: <span id="upcoming-classes"></span></p>
+        <p>Payment History: <span id="payment-history"></span></p>
+        <button class="cta-button">Upgrade Plan</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Contact: info@dobumartialarts.com | &copy; 2025 DoBu Martial Arts</p>
+      <ul class="footer-links">
+        <li><a href="#privacy">Privacy Policy</a></li>
+        <li><a href="#terms">Terms of Service</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
